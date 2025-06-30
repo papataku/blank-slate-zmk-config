@@ -26,15 +26,6 @@
 		led0 = &blue_led;
 	};
 
-	behaviors {
-		hw_soft_off: behavior_hw_soft_off {
-			compatible = "zmk,behavior-soft-off";
-			#binding-cells = <0>;
-			label = "HW_SO";
-			hold-time-ms = <1000>;
-		};
-	};
-
 	leds {
 		compatible = "gpio-leds";
 		blue_led: led_0 {
